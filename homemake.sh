@@ -4,7 +4,7 @@
 
 DOTFILES_DIR=.
 BACKUP_DIR=~/.dotfiles.old
-FILES="vimrc vim zshrc oh-my-zsh"
+FILES="vimrc zshrc oh-my-zsh"
 
 # Create backup dir
 if [ ! -d $BACKUP_DIR ]; then
@@ -24,5 +24,12 @@ for FILE in $FILES; do
 		ln -s $DOTFILES_DIR/$FILE ~/.$FILE
 	fi
 done
+
+if [ -d ~/.vim/bundle/vundle ]; then
+  echo "You already have vundle installed"
+else
+  echo "Cloning vundle"
+  git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+fi
 
 echo "Furnished!"
