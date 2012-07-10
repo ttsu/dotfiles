@@ -2,7 +2,7 @@
 # homemake.sh v0.1
 # Furnishes the home directory with dotfiles
 
-DOTFILES_DIR=.
+DOTFILES_DIR=~/dotfiles
 BACKUP_DIR=~/.dotfiles.old
 FILES="vimrc zshrc"
 
