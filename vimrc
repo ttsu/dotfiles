@@ -32,3 +32,5 @@ syntax on
 
 set statusline=%F%m%r%h%w\ [Line=%03l,Col=%03v][%p%%]\ [Type=%y]
 set laststatus=2
+
+autocmd vimenter * if !argc() | NERDTree | endif
