@@ -7,6 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'L9'
+Bundle 'airblade/vim-gitgutter'
 Bundle 'VimClojure'
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
